@@ -1,0 +1,12 @@
+{
+  "name": "yarnWorld",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "repository": "git@github.com:killsos/yarn-study.git",
+  "author": "killsos <killsos.ql@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "pm2": "^2.1.5"
+  }
+}

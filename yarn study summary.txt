@@ -1,1 +1,103 @@
 yarn study
+
+1 Installation
+
+   macOS
+   homwbrew http://brew.sh/index_zh-cn.html
+
+   install homebrew:
+   1' /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+   2' brew update
+   3' brew install yarn
+
+   4' Add export PATH="$PATH:$HOME/.yarn/bin" to your profile
+
+   yarn --version
+
+2 yarn world
+
+  Starting a new project
+  $ yarn init
+
+  Adding a dependency
+  $ yarn add [package]
+  $ yarn add [package]@[version]
+  $ yarn add [package]@[tag]
+
+  Updating a dependency
+
+  $ yarn upgrade [package]
+  $ yarn upgrade [package]@[version]
+  $ yarn upgrade [package]@[tag]
+
+  Removing a dependency
+
+  $ yarn remove [package]
+
+  Installing all the dependencies of project
+  $ yarn
+  or
+  $ yarn install
+
+
+  yarn add: adds a package to use in your current package.
+  $ yarn init: initializes the development of a package.
+  $ yarn install: installs all the dependencies defined in a package.json file.
+  $ yarn publish: publishes a package to a package manager.
+  $ yarn remove: removes an unused package from your current package.
+
+
+  yarn init   // package.json
+
+  You can also add other types of dependencies using flags:
+
+  $: yarn add --dev to add to devDependencies
+  $: yarn add --peer to add to peerDependencies
+  $: yarn add --optional to add to optionalDependencies
+
+  You can specify which version of a package you want to install by
+  specifying either a dependency version or a tag.
+
+  $: yarn add [package]@[version]
+  $: yarn add [package]@[tag]
+
+
+  Upgrading a dependency
+
+  yarn upgrade [package]
+  yarn upgrade [package]@[version]
+  yarn upgrade [package]@[tag]
+  This will upgrade your package.json and your yarn.lock file.
+
+    {
+      "name": "my-package",
+      "dependencies": {
+  -     "package-1": "^1.0.0"
+  +     "package-1": "^2.0.0"
+      }
+    }
+  Removing a dependency
+
+  yarn remove [package]
+  This will update your package.json and your yarn.lock file.
+
+  Installing Options
+
+  There are many options for installing dependencies, including:
+
+  Installing all dependencies: yarn or yarn install
+  Installing one and only one version of a package: yarn install --flat
+  Forcing a re-download of all packages: yarn install --force
+  Installing only production dependencies: yarn install --production
+
+
+
+  CLI Introduction
+  yarn ls
+
+  yarn version
+
+  yarn why <query>
+
+  yarn upgrade
